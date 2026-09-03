@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sandaruwan Senanayake | Software Engineer & Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Sandaruwan Senanayake, a Software Engineer and Full-Stack Developer specializing in React, Node.js, MongoDB, UI/UX, and modern web applications." />
+<meta name="theme-color" content="#0B0D10" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Sandaruwan Senanayake | Software Engineer & Full-Stack Developer" />
+<meta property="og:description" content="Portfolio of Sandaruwan Senanayake, a Software Engineer and Full-Stack Developer specializing in React, Node.js, MongoDB, UI/UX, and modern web applications." />
+<meta property="og:image" content="assets/profile.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner container">
+    <a href="#home" class="nav-logo">Sandaru<span class="dot">.</span></a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-small btn-outline nav-cta">Let's talk</a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">Hello there, I'm Sandaruwan Senanayake <span aria-hidden="true">👋</span></p>
+        <h1 class="hero-title">
+          Software Engineer<br>
+          building <span class="accent-text">digital experiences.</span>
+        </h1>
+        <p class="hero-lead">
+          I build modern, scalable web applications with a focus on clean engineering,
+          intuitive user experiences, and real-world impact.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-outline">Let's talk</a>
+        </div>
+
+        <a href="assets/Sandaruwan_Senanayake_CV.pdf" class="hero-cv" id="download-cv" download>Download CV <span aria-hidden="true">↓</span></a>
+
+        <div class="hero-social" aria-label="Social links">
+          <a href="https://github.com/SandaruwanSena" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.15-.02-2.09-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sandaruwansenanayake9" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="mailto:sandaru.cds@gmail.com" aria-label="Send an email">
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/><path d="M3.5 6l8.5 7 8.5-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="hero-photo-wrap">
+          <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+          <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+          <img src="assets/profile-cutout.png" alt="Portrait of Sandaruwan Senanayake" class="hero-cutout" width="1000" height="974" />
+          <span class="badge badge-1">React.js</span>
+          <span class="badge badge-2">Node.js</span>
+          <span class="badge badge-3">MongoDB</span>
+          <span class="badge badge-4">Figma</span>
+          <span class="badge badge-5">Ant Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div data-reveal>
+        <h2 class="section-title">A little about me</h2>
+        <p class="body-text">
+          I'm a Software Engineering undergraduate with a completed degree in Computing and
+          Information Systems and practical industry experience in full-stack web development.
+        </p>
+        <p class="body-text">
+          I enjoy transforming ideas into functional, intuitive, and scalable digital products.
+          My main development experience is centered around the MERN stack, while I also have a
+          strong interest in UI/UX design, software architecture, artificial intelligence, and
+          emerging technologies.
+        </p>
+        <div class="about-meta">
+          <div><span class="meta-label">Based in</span><span>Galle, Sri Lanka</span></div>
+          <div><span class="meta-label">Focus</span><span>Full-stack Web Development</span></div>
+        </div>
+      </div>
+
+      <div class="about-cards" data-reveal>
+        <div class="info-card">
+          <div class="info-icon">{icon:code}</div>
+          <h3>Software Engineering</h3>
+          <p>Building maintainable and reliable applications.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">{icon:layers}</div>
+          <h3>Full-Stack Development</h3>
+          <p>Developing complete web experiences from frontend to backend.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">{icon:figma}</div>
+          <h3>UI/UX</h3>
+          <p>Designing intuitive and user-friendly interfaces.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">{icon:puzzle}</div>
+          <h3>Problem Solving</h3>
+          <p>Turning real-world problems into practical digital solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Tech stack</h2>
+      <p class="section-lead" data-reveal>Tools and technologies I reach for most, grouped by where they sit in the stack.</p>
+
+      <div class="skills-grid" data-reveal>
+        <div class="skill-group">
+          <h3><span class="skill-icon">{icon:code}</span>Frontend</h3>
+          <div class="chip-row">
+            <span class="chip">React.js</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">Redux Toolkit</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><span class="skill-icon">{icon:server}</span>Backend</h3>
+          <div class="chip-row">
+            <span class="chip">Node.js</span>
+            <span class="chip">Express.js</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">JWT Authentication</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><span class="skill-icon">{icon:database}</span>Database</h3>
+          <div class="chip-row">
+            <span class="chip">MongoDB</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><span class="skill-icon">{icon:tool}</span>Tools</h3>
+          <div class="chip-row">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Postman</span>
+            <span class="chip">Figma</span>
+            <span class="chip">Jira</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3><span class="skill-icon">{icon:layers}</span>Other</h3>
+          <div class="chip-row">
+            <span class="chip">UI/UX Design</span>
+            <span class="chip">API Integration</span>
+            <span class="chip">Authentication</span>
+            <span class="chip">Database Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Experience</h2>
+
+      <div class="timeline" data-reveal>
+        <div class="timeline-item">
+          <div class="timeline-marker">01</div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>Software Engineering Intern</h3>
+              <span class="timeline-date">Sep 2024 — Mar 2025</span>
+            </div>
+            <p class="timeline-org">ICIEOS (Pvt) Ltd</p>
+            <p class="body-text">
+              Worked as a Software Engineering Intern contributing to full-stack web application
+              development and modern frontend experiences, building responsive interfaces with
+              React.js and Tailwind CSS while integrating REST APIs and supporting backend work
+              with Node.js and Express.js in an agile team environment.
+            </p>
+            <div class="chip-row">
+              <span class="chip chip-sm">React.js</span>
+              <span class="chip chip-sm">Node.js</span>
+              <span class="chip chip-sm">Express.js</span>
+              <span class="chip chip-sm">MongoDB</span>
+              <span class="chip chip-sm">Tailwind CSS</span>
+              <span class="chip chip-sm">Git &amp; GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Featured projects</h2>
+      <p class="section-lead" data-reveal>A selection of work spanning full-stack engineering, applied AI, and product design.</p>
+
+      <div class="projects-list">
+
+        <article class="project-card" data-reveal data-project="ecommerce">
+          <div class="project-visual" aria-hidden="true">
+            <div class="mock-window mock-admin">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-body">
+                <div class="mock-sidebar"></div>
+                <div class="mock-main">
+                  <div class="mock-stat-row">
+                    <div class="mock-stat"></div><div class="mock-stat"></div><div class="mock-stat"></div>
+                  </div>
+                  <div class="mock-table">
+                    <div></div><div></div><div></div><div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Full-stack · Admin platform</span>
+            <h3>E-Commerce Admin Portal</h3>
+            <p>A modern administration platform for managing an e-commerce ecosystem — products,
+              orders, users, dashboards, and related business operations.</p>
+            <ul class="project-features">
+              <li>Product management</li>
+              <li>Admin dashboard</li>
+              <li>Authentication</li>
+              <li>Data tables</li>
+              <li>API integration</li>
+              <li>Responsive interface</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip chip-sm">React.js</span>
+              <span class="chip chip-sm">Node.js</span>
+              <span class="chip chip-sm">Express.js</span>
+              <span class="chip chip-sm">MongoDB</span>
+              <span class="chip chip-sm">JWT</span>
+              <span class="chip chip-sm">Tailwind CSS</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/SandaruwanSena" target="_blank" rel="noopener" class="btn btn-small btn-outline">View GitHub</a>
+              <button class="btn btn-small btn-ghost" data-open-modal="ecommerce">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reverse" data-reveal data-project="metermate">
+          <div class="project-visual" aria-hidden="true">
+            <div class="mock-window mock-phone">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-body mock-phone-body">
+                <div class="mock-qr"></div>
+                <div class="mock-line short"></div>
+                <div class="mock-line"></div>
+                <div class="mock-map"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Utility application</span>
+            <h3>MeterMate</h3>
+            <p>A utility-focused application designed to simplify electricity meter reading
+              through digital tools.</p>
+            <ul class="project-features">
+              <li>QR code scanning</li>
+              <li>Electricity meter reading</li>
+              <li>Google Maps integration</li>
+              <li>User-friendly interface</li>
+            </ul>
+            <div class="chip-row">
+              <span class="chip chip-sm">React</span>
+              <span class="chip chip-sm">Modern web technologies</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/SandaruwanSena" target="_blank" rel="noopener" class="btn btn-small btn-outline">View GitHub</a>
+              <button class="btn btn-small btn-ghost" data-open-modal="metermate">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal data-project="bugzid">
+          <div class="project-visual" aria-hidden="true">
+            <div class="mock-window mock-ai">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-body mock-ai-body">
+                <div class="mock-scan">
+                  <div class="mock-scan-frame"></div>
+                  <div class="mock-scan-line"></div>
+                </div>
+                <div class="mock-result">
+                  <div class="mock-line short"></div>
+                  <div class="mock-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Applied AI · Agriculture</span>
+            <h3>BugzID</h3>
+            <p>An AI-powered application designed to help farmers identify insect pests and
+              obtain useful information for better agricultural decision-making.</p>
+            <ul class="project-features">
+              <li>AI-powered pest identification</li>
+              <li>Image-based analysis</li>
+              <li>Farmer-focused UX</li>
+              <li>Practical real-world application</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/SandaruwanSena" target="_blank" rel="noopener" class="btn btn-small btn-outline">View GitHub</a>
+              <button class="btn btn-small btn-ghost" data-open-modal="bugzid">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reverse" data-reveal data-project="boc">
+          <div class="project-visual" aria-hidden="true">
+            <div class="mock-window mock-phone mock-ux">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-body mock-phone-body">
+                <div class="mock-ux-card"></div>
+                <div class="mock-ux-row"><div></div><div></div><div></div></div>
+                <div class="mock-line"></div>
+                <div class="mock-line short"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">UX/UI case study</span>
+            <h3>BOC B App — UX Redesign</h3>
+            <p>A UX/UI redesign concept for improving the usability and experience of the Bank
+              of Ceylon mobile banking application.</p>
+            <ul class="project-features">
+              <li>Streamlined navigation</li>
+              <li>Modern visual design</li>
+              <li>Biometric login</li>
+              <li>Personalization</li>
+              <li>Fixed deposit integration</li>
+              <li>Quick payment functionality</li>
+            </ul>
+            <div class="project-actions">
+              <button class="btn btn-small btn-ghost" data-open-modal="boc">View case study</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title" data-reveal>Education</h2>
+
+      <div class="edu-card" data-reveal>
+        <div class="edu-marker">🎓</div>
+        <div>
+          <h3>BSc (Hons) in Computing and Information Systems</h3>
+          <p class="timeline-org">Sabaragamuwa University of Sri Lanka</p>
+          <p class="body-text">Faculty of Computing — Department of Computing and Information Systems.</p>
+          <span class="timeline-date">2021 — 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESEARCH ================= -->
+  <section class="section research-section" id="research">
+    <div class="container research-grid">
+      <div data-reveal>
+        <p class="eyebrow eyebrow-plain">Research</p>
+        <h2 class="section-title">Detecting usability problems in web apps through facial expressions and contextual scene analysis</h2>
+        <p class="body-text">
+          A research project exploring how facial expressions and contextual screen information
+          can be combined to identify potential usability problems in web applications.
+        </p>
+        <div class="chip-row">
+          <span class="chip chip-sm">Computer Vision</span>
+          <span class="chip chip-sm">Deep Learning</span>
+          <span class="chip chip-sm">FER-2013</span>
+          <span class="chip chip-sm">EMOTIC</span>
+          <span class="chip chip-sm">WebUI</span>
+        </div>
+      </div>
+
+      <div class="research-arch" data-reveal>
+        <div class="arch-step">
+          <span class="arch-num">1</span>
+          <div>
+            <h4>Facial emotion analysis</h4>
+            <p>Reads user facial expressions as a real-time signal of friction or confusion.</p>
+          </div>
+        </div>
+        <div class="arch-step">
+          <span class="arch-num">2</span>
+          <div>
+            <h4>Screen / context analysis</h4>
+            <p>Analyzes on-screen content to understand what the user was looking at.</p>
+          </div>
+        </div>
+        <div class="arch-step">
+          <span class="arch-num">3</span>
+          <div>
+            <h4>Two-stream architecture</h4>
+            <p>Combines both signals through parallel processing streams.</p>
+          </div>
+        </div>
+        <div class="arch-step">
+          <span class="arch-num">4</span>
+          <div>
+            <h4>Attention mechanism</h4>
+            <p>Weighs the most relevant signals to flag likely usability issues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHAT I DO ================= -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <h2 class="section-title" data-reveal>What I do</h2>
+
+      <div class="services-grid" data-reveal>
+        <div class="service-card">
+          <div class="info-icon">{icon:layers}</div>
+          <h3>Full-Stack Development</h3>
+          <p>Building modern web applications from frontend to backend.</p>
+        </div>
+        <div class="service-card">
+          <div class="info-icon">{icon:code}</div>
+          <h3>Frontend Development</h3>
+          <p>Creating responsive and interactive interfaces with React and modern frontend technologies.</p>
+        </div>
+        <div class="service-card">
+          <div class="info-icon">{icon:figma}</div>
+          <h3>UI/UX Design</h3>
+          <p>Designing clean, intuitive, and user-centered digital experiences.</p>
+        </div>
+        <div class="service-card">
+          <div class="info-icon">{icon:server}</div>
+          <h3>API &amp; Backend Development</h3>
+          <p>Building REST APIs, authentication systems, and backend services.</p>
+        </div>
+        <div class="service-card">
+          <div class="info-icon">{icon:play}</div>
+          <h3>Video Editing</h3>
+          <p>With a special focus on short-form content like Reels, TikToks, and YouTube Shorts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BEYOND THE CODE ================= -->
+  <section class="section beyond-section" id="beyond">
+    <div class="container beyond-grid" data-reveal>
+      <h2 class="section-title-sm">Beyond the code</h2>
+      <p class="body-text beyond-text">
+        When I'm not coding, I enjoy exploring new places, spending time in nature, learning new
+        technologies, and turning ideas into useful digital experiences.
+      </p>
+      <div class="beyond-icons">
+        <span title="Travel">{icon:compass}</span>
+        <span title="Nature">{icon:leaf}</span>
+        <span title="Learning">{icon:book}</span>
+        <span title="Technology">{icon:cpu}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-head" data-reveal>
+        <h2 class="section-title">Let's build something together.</h2>
+        <p class="section-lead">Have an idea, project, or opportunity in mind? I'd love to hear about it.</p>
+        <div class="hero-actions">
+          <a href="mailto:sandaru.cds@gmail.com" class="btn btn-primary">Email me</a>
+          <a href="https://www.linkedin.com/in/sandaruwansenanayake9" target="_blank" rel="noopener" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form" data-reveal novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+            <span class="field-error" id="err-name"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+            <span class="field-error" id="err-email"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="field-error" id="err-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send message</button>
+        <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="#home" class="nav-logo">Sandaru<span class="dot">.</span></a>
+      <p class="footer-role">Software Engineer | Full-Stack Developer</p>
+    </div>
+
+    <div class="footer-social" aria-label="Social links">
+      <a href="https://github.com/SandaruwanSena" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.15-.02-2.09-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/sandaruwansenanayake9" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+      </a>
+      <a href="mailto:sandaru.cds@gmail.com" aria-label="Send an email">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/><path d="M3.5 6l8.5 7 8.5-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Sandaruwan Senanayake. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= PROJECT MODAL ================= -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+    </button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
