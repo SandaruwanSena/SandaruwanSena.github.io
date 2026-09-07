@@ -478,6 +478,8 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight:600; line-height:1.15
   display:flex; gap: 24px; align-items:flex-start;
   background: var(--bg-surface); border:1px solid var(--border); border-radius: var(--radius);
   padding: 32px; max-width: 780px;
+  margin-bottom: 20px; 
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 .edu-marker{
   width:52px; height:52px; border-radius:14px; flex-shrink:0;
