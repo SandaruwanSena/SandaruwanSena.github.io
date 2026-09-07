@@ -481,6 +481,13 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight:600; line-height:1.15
   margin-bottom: 20px; 
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
+.edu-card:last-child {
+  margin-bottom: 0;
+}
+.edu-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-border);
+}
 .edu-marker{
   width:52px; height:52px; border-radius:14px; flex-shrink:0;
   background: var(--accent-soft); border:1px solid var(--accent-border);
