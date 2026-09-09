@@ -192,10 +192,7 @@
   }
 
   /* ------------------------------------------------------------------ */
-  /*  Contact form validation (no backend — front-end only)             */
-  /* ------------------------------------------------------------------ */
-  function initForm() /* ------------------------------------------------------------------ */
-  /*  Contact form validation & Web3Forms integration                   */
+  /*  Contact form validation                                           */
   /* ------------------------------------------------------------------ */
   function initForm() {
     var form = document.getElementById("contact-form");
