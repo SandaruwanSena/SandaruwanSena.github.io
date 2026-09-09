@@ -192,6 +192,34 @@
   }
 
   /* ------------------------------------------------------------------ */
+  /*  Toast Notification                                                */
+  /* ------------------------------------------------------------------ */
+  function showToast(message, type) {
+    var existingToast = document.querySelector(".toast");
+    if (existingToast) existingToast.remove();
+
+    var toast = document.createElement("div");
+    toast.className = "toast toast-" + (type || "success");
+    
+    var icon = type === "error" ? "⚠️" : "✓";
+    toast.innerHTML = '<span class="toast-icon">' + icon + '</span><span>' + message + '</span>';
+    
+    document.body.appendChild(toast);
+
+    // Trigger animation
+    setTimeout(function () {
+      toast.classList.add("show");
+    }, 10);
+
+    // Auto dismiss after 4.5 seconds
+    setTimeout(function () {
+      toast.classList.remove("show");
+      setTimeout(function () {
+        if (toast.parentNode) toast.parentNode.removeChild(toast);
+      }, 350);
+    }, 4500);
+  }
+  /* ------------------------------------------------------------------ */
   /*  Contact form validation                                           */
   /* ------------------------------------------------------------------ */
   function initForm() {
