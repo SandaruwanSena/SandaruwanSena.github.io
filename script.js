@@ -217,7 +217,7 @@
       setTimeout(function () {
         if (toast.parentNode) toast.parentNode.removeChild(toast);
       }, 350);
-    }, 4500);
+    }, 5500);
   }
   /* ------------------------------------------------------------------ */
   /*  Contact form validation                                           */
@@ -277,17 +277,15 @@
       .then(async function (response) {
         var res = await response.json();
         if (response.status === 200) {
-          note.textContent = "Thanks " + name.split(" ")[0] + "! Your message was sent successfully.";
-          note.style.color = "var(--accent)";
+          showToast("Thanks " + name.split(" ")[0] + "! Your message was sent successfully.", "success");
+          if (note) note.textContent = "";
           form.reset();
         } else {
-          note.textContent = res.message || "Something went wrong. Please try again.";
-          note.style.color = "#d97070";
+          showToast(res.message || "Something went wrong. Please try again.", "error");
         }
       })
       .catch(function () {
-        note.textContent = "Something went wrong. Please email me directly at sandaru.cds@gmail.com";
-        note.style.color = "#d97070";
+        showToast("Something went wrong. Please email me directly at sandaru.cds@gmail.com", "error");
       })
       .finally(function () {
         submitBtn.textContent = originalBtnText;
