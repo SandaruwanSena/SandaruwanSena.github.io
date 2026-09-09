@@ -569,6 +569,11 @@
       </div>
 
       <form class="contact-form" id="contact-form" data-reveal novalidate>
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="d7dc7852-9965-4b8c-87ef-e77b82feb97f" />
+        
+        <!-- Spam bot protection (Honeypot) -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
         <div class="form-row">
           <div class="field">
             <label for="name">Name</label>
@@ -587,7 +592,7 @@
           <span class="field-error" id="err-message"></span>
         </div>
         <button type="submit" class="btn btn-primary form-submit">Send message</button>
-        <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+        <p class="form-note" id="submit-btn" role="status" aria-live="polite"></p>
       </form>
     </div>
   </section>
