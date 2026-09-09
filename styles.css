@@ -685,3 +685,55 @@ h1,h2,h3,h4{ font-family: var(--font-display); font-weight:600; line-height:1.15
   .hero-actions{ flex-direction:column; align-items:stretch; }
   .hero-social{ gap:10px; }
 }
+
+.toast {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  background: rgba(20, 23, 28, 0.95);
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  transform: translateY(30px) scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.35s var(--ease), opacity 0.35s var(--ease);
+}
+
+.toast.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.toast.toast-success {
+  border-color: var(--accent-border);
+}
+
+.toast.toast-error {
+  border-color: rgba(217, 112, 112, 0.5);
+}
+
+.toast-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.toast.toast-success .toast-icon {
+  color: var(--accent);
+}
+
+.toast.toast-error .toast-icon {
+  color: #d97070;
+}
