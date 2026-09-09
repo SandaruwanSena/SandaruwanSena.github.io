@@ -194,10 +194,14 @@
   /* ------------------------------------------------------------------ */
   /*  Contact form validation (no backend — front-end only)             */
   /* ------------------------------------------------------------------ */
+  function initForm() /* ------------------------------------------------------------------ */
+  /*  Contact form validation & Web3Forms integration                   */
+  /* ------------------------------------------------------------------ */
   function initForm() {
     var form = document.getElementById("contact-form");
     if (!form) return;
     var note = document.getElementById("form-note");
+    var submitBtn = form.querySelector('button[type="submit"]');
 
     function setError(fieldId, msg) {
       var field = document.getElementById(fieldId);
@@ -221,7 +225,7 @@
       else if (!emailRe.test(email)) { setError("email", "Please enter a valid email address."); valid = false; }
       else setError("email", "");
 
-      if (!message || message.length < 10) { setError("message", "Please enter a message (at least 10 characters)."); valid = false; }
+      if (!message || message.length < 10) { setError("message", "Please enter a message."); valid = false; }
       else setError("message", "");
 
       if (!valid) {
@@ -229,10 +233,41 @@
         return;
       }
 
-      // No backend is wired up. This is where a request to an email
-      // service (e.g. Formspree, Resend, EmailJS) would be sent.
-      note.textContent = "Thanks, " + name.split(" ")[0] + " — this form isn't connected to an email service yet, so please reach out directly at sandaru.cds@gmail.com in the meantime.";
-      form.reset();
+      var originalBtnText = submitBtn.textContent;
+      submitBtn.textContent = "Sending...";
+      submitBtn.disabled = true;
+
+      var formData = new FormData(form);
+      var object = Object.fromEntries(formData);
+      var json = JSON.stringify(object);
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      })
+      .then(async function (response) {
+        var res = await response.json();
+        if (response.status === 200) {
+          note.textContent = "Thanks " + name.split(" ")[0] + "! Your message was sent successfully.";
+          note.style.color = "var(--accent)";
+          form.reset();
+        } else {
+          note.textContent = res.message || "Something went wrong. Please try again.";
+          note.style.color = "#d97070";
+        }
+      })
+      .catch(function () {
+        note.textContent = "Something went wrong. Please email me directly at sandaru.cds@gmail.com";
+        note.style.color = "#d97070";
+      })
+      .finally(function () {
+        submitBtn.textContent = originalBtnText;
+        submitBtn.disabled = false;
+      });
     });
   }
 
